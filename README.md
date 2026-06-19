@@ -1,60 +1,132 @@
-# 🚀 DecodeLabs AI Internship 2026
-### Artificial Intelligence Projects Portfolio
+# 🤖 Rule-Based AI Chatbot
+### DecodeLabs Internship 2026 — Project 1
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![Internship](https://img.shields.io/badge/DecodeLabs-2026-orange)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
-![Projects](https://img.shields.io/badge/Projects-3-brightgreen)
 
 ---
 
-## 👤 Intern Information
-| Field | Details |
+## 📌 Project Overview
+A simple Rule-Based AI Chatbot built using Python. The chatbot uses a **dictionary-based knowledge base** to match user input with predefined responses. This project demonstrates the foundational concept of conversational AI before moving to ML-based NLP models.
+
+---
+
+## 🎯 Objective
+Build an interactive chatbot that:
+- Accepts user text input
+- Sanitizes and processes the input
+- Matches it against a predefined rule set
+- Returns an appropriate response or a fallback message
+
+---
+
+## 🧠 How It Works
+
+```
+User Input → Sanitize (lowercase + strip) → Dictionary Lookup → Response
+                                                    ↓
+                                            Not Found → Fallback Message
+```
+
+---
+
+## 📁 Project Structure
+
+```
+project1-rule-based-chatbot/
+│
+├── rule_based_chatbot.ipynb    # Main Jupyter Notebook (complete project)
+├── chatbot.py                  # Python script version
+└── README.md                   # Project documentation
+```
+
+---
+
+## ⚙️ Key Concepts Used
+
+| Concept | Description |
 |---|---|
-| **Name** | Umar Saeed Jan |
-| **Domain** | Artificial Intelligence |
-| **Batch** | 2026 |
-| **Organization** | DecodeLabs |
-| **GitHub** | [umar123saeed](https://github.com/umar123saeed) |
+| Knowledge Base | Python dictionary storing question-answer pairs |
+| Input Sanitization | `.lower().strip()` to normalize user input |
+| Dictionary Lookup | `.get()` method with fallback default value |
+| Infinite Loop | `while True` loop to keep chatbot running |
+| Exit Mechanism | `exit` keyword to break the loop |
 
 ---
 
-## 📂 Projects Overview
+## 💬 Sample Conversation
 
-### ✅ Project 1 — Rule-Based AI Chatbot
-> A dictionary-based chatbot that matches user input with predefined responses using pure Python logic.
+```
+========================================
+   Welcome to DecodeBot! 🤖
+   Type 'exit' to quit
+========================================
 
-- **Concepts:** Knowledge Base, Input Sanitization, Dictionary Lookup, Fallback Handling
-- **Tech:** Python
-- 📁 [View Project](./Project1-Rule-Based-Chatbot/)
+You: hello
+Bot: Hi there! How can I help you?
 
----
+You: what is ai
+Bot: AI is Artificial Intelligence — machines that think like humans!
 
-### ✅ Project 2 — KNN Classification on Iris Dataset
-> A K-Nearest Neighbors classifier trained on the classic Iris dataset to predict flower species.
+You: what is ml
+Bot: ML is Machine Learning — AI that learns from data!
 
-- **Concepts:** KNN Algorithm, Feature Scaling, Model Evaluation, Confusion Matrix
-- **Tech:** Python, Scikit-learn, Pandas, Matplotlib, Seaborn
-- 📁 [View Project](./Project2-KNN-Classification/)
+You: who made you
+Bot: I was built by Umar Saeed Jan at DecodeLabs!
 
----
+You: thanks
+Bot: You are welcome! Anything else?
 
-### ✅ Project 3 — AI Recommendation System
-> A content-based job recommendation engine using TF-IDF vectorization and Cosine Similarity.
-
-- **Concepts:** TF-IDF, Cosine Similarity, Content-Based Filtering, Vector Space Model
-- **Tech:** Python, Scikit-learn, Pandas, NumPy
-- 📁 [View Project](./Project3-AI-Recommendation-System/)
-
----
-
-## 🛠️ Tech Stack Used
-![Python](https://img.shields.io/badge/Python-FFD43B?style=flat&logo=python&logoColor=blue)
-![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=flat&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![Scikit Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=Jupyter&logoColor=white)
+You: exit
+Bot: Goodbye! See you next time!
+```
 
 ---
 
-*Built with ❤️ at DecodeLabs — Batch 2026*
+## 🚀 How to Run
+
+**Option 1 — Jupyter Notebook:**
+```bash
+jupyter notebook rule_based_chatbot.ipynb
+```
+
+**Option 2 — Python Script:**
+```bash
+python chatbot.py
+```
+
+---
+
+## 📚 Supported Commands
+
+| User Input | Bot Response |
+|---|---|
+| hello | Hi there! How can I help you? |
+| hi | Hello! What can I do for you? |
+| how are you | I am doing great! Thanks for asking. |
+| what is ai | AI is Artificial Intelligence — machines that think like humans! |
+| what is ml | ML is Machine Learning — AI that learns from data! |
+| your name | I am DecodeBot, your AI assistant! |
+| who made you | I was built by Umar Saeed Jan at DecodeLabs! |
+| help | I can answer questions about AI. Just ask me anything! |
+| thanks | You are welcome! Anything else? |
+| bye | Goodbye! Have a great day! |
+| exit | Exits the chatbot |
+
+---
+
+## 🔮 Future Improvements
+- Add more rules to expand the knowledge base
+- Implement partial/fuzzy matching for better input handling
+- Integrate NLP libraries (NLTK/spaCy) for intent recognition
+- Move towards ML-based chatbot using transformers
+
+---
+
+## 👤 Author
+**Umar Saeed Jan**
+DecodeLabs AI Internship — Batch 2026
+
+---
+*Built with ❤️ at DecodeLabs*
